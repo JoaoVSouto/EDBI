@@ -11,11 +11,11 @@ int main() {
   unsigned n{1000000000};  // 1
   ull sum{0};              // 1
 
-  for (size_t i = 1; i <= n; ++i) {  // n
+  for (size_t i = 1; i <= n; ++i) {  // 1 + (n + 1) + n = 2n + 2
     sum += i;                        // 2n
   }
 
-  // TOTAL INSTRUCTIONS: 3n + 2
+  // TOTAL INSTRUCTIONS: 4n + 4
 
   auto stop = high_resolution_clock::now();
 
