@@ -21,6 +21,8 @@ class TestController {
  public:
   TestController(const std::string& file_path);
   ~TestController();
+
+  void best_candidates(unsigned long quantity);
 };
 
 #endif  // !TEST_CONTROLLER_H

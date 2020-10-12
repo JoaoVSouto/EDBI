@@ -45,5 +45,9 @@ int App::run(int argc, char const *argv[]) {
 
   TestController test_controller(file_path);
 
+  if (!action_type.compare("best")) {
+    test_controller.best_candidates(quantity);
+  }
+
   return 0;
 }

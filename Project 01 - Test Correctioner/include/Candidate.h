@@ -17,7 +17,10 @@ class Candidate {
   void set_correct_answers(unsigned correct_answers);
   void set_wrong_answers(unsigned wrong_answers);
 
+  std::string get_name();
   char* get_answers();
+  unsigned get_correct_answers();
+  unsigned get_wrong_answers();
 };
 
 #endif  // !CANDIDATE_H

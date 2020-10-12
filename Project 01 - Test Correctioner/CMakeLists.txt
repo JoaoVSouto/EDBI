@@ -11,7 +11,8 @@ SET ( SRCS
       src/utils.cpp
       src/Candidate.cpp
       src/Question.cpp
-      src/TestController.cpp )
+      src/TestController.cpp
+      src/Sort.cpp )
 
 ### [1] Application target
 # set the include path

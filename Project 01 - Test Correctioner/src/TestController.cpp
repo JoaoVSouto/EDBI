@@ -6,6 +6,8 @@
 #include <sstream>
 #include <string>
 
+#include "Sort.h"
+
 TestController::TestController(const std::string& file_path)
     : candidates(nullptr),
       candidates_size(0),
@@ -88,4 +90,17 @@ void TestController::double_candidates_capacity() {
 
   delete[] this->candidates;
   this->candidates = tmp_arr;
+}
+
+void TestController::best_candidates(unsigned long quantity) {
+  Sort::best_candidates(this->candidates, 0, this->candidates_size - 1);
+
+  unsigned long quantity_to_show = quantity > this->candidates_size
+                                       ? this->candidates_size
+                                       : quantity;
+
+  for (unsigned long i = 0; i < quantity_to_show; ++i) {
+    std::cout << this->candidates[i].get_name() << " - Acertos: "
+              << this->candidates[i].get_correct_answers() << std::endl;
+  }
 }
