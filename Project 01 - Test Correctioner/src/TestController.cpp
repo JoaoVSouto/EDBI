@@ -146,3 +146,30 @@ void TestController::best_questions(unsigned long quantity) {
               << " - Hits: " << this->questions[i].get_correct_amount() << std::endl;
   }
 }
+
+void TestController::worst_questions(unsigned long quantity) {
+  Sort::worst_questions(this->questions, 0, this->QUESTIONS_AMOUNT - 1);
+
+  unsigned long quantity_to_show = quantity > this->QUESTIONS_AMOUNT
+                                       ? this->QUESTIONS_AMOUNT
+                                       : quantity;
+
+  // Order questions with the same incorrect amount value in ascending order
+  unsigned ref = 0;
+  for (unsigned i = 1; i < this->QUESTIONS_AMOUNT; ++i) {
+    if (this->questions[i].get_incorrect_amount() !=
+        this->questions[ref].get_incorrect_amount()) {
+      if (i - ref > 1) {
+        Sort::questions(this->questions, ref, i - 1);
+        ref = i;
+      } else {
+        ref += 1;
+      }
+    }
+  }
+
+  for (unsigned i = 0; i < quantity_to_show; ++i) {
+    std::cout << "Question " << this->questions[i].get_number()
+              << " - Misses: " << this->questions[i].get_incorrect_amount() << std::endl;
+  }
+}
