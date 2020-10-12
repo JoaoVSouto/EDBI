@@ -49,6 +49,8 @@ int App::run(int argc, char const *argv[]) {
     test_controller.best_candidates(quantity);
   } else if (!action_type.compare("worst")) {
     test_controller.worst_candidates(quantity);
+  } else if (!action_type.compare("best-questions")) {
+    test_controller.best_questions(quantity);
   }
 
   return 0;

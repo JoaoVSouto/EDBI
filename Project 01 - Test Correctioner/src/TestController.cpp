@@ -14,7 +14,7 @@ TestController::TestController(const std::string& file_path)
       candidates_capacity(8) {
   candidates = new Candidate[candidates_capacity];
 
-  for (int i = 1; i <= this->QUESTIONS_AMOUNT; ++i) {
+  for (unsigned i = 1; i <= this->QUESTIONS_AMOUNT; ++i) {
     Question question(i);
 
     this->questions[i - 1] = question;
@@ -42,7 +42,7 @@ TestController::TestController(const std::string& file_path)
     char* answers = candidate.get_answers();
     unsigned correct_answers = 0;
 
-    for (int i = 0; i < this->QUESTIONS_AMOUNT; ++i) {
+    for (unsigned i = 0; i < this->QUESTIONS_AMOUNT; ++i) {
       char alternative;
 
       stream >> alternative;
@@ -54,6 +54,8 @@ TestController::TestController(const std::string& file_path)
         this->questions[i].set_correct_amount(
             this->questions[i].get_correct_amount() + 1);
       } else if (alternative > 'E') {
+        this->questions[i].set_incorrect_amount(
+            this->questions[i].get_incorrect_amount() + 1);
         this->questions[i].set_blank_amount(
             this->questions[i].get_blank_amount() + 1);
       } else {
@@ -100,7 +102,7 @@ void TestController::best_candidates(unsigned long quantity) {
                                        : quantity;
 
   for (unsigned long i = 0; i < quantity_to_show; ++i) {
-    std::cout << this->candidates[i].get_name() << " - Acertos: "
+    std::cout << this->candidates[i].get_name() << " - Hits: "
               << this->candidates[i].get_correct_answers() << std::endl;
   }
 }
@@ -113,7 +115,34 @@ void TestController::worst_candidates(unsigned long quantity) {
                                        : quantity;
 
   for (unsigned long i = 0; i < quantity_to_show; ++i) {
-    std::cout << this->candidates[i].get_name() << " - Erros: "
+    std::cout << this->candidates[i].get_name() << " - Misses: "
               << this->candidates[i].get_wrong_answers() << std::endl;
+  }
+}
+
+void TestController::best_questions(unsigned long quantity) {
+  Sort::best_questions(this->questions, 0, this->QUESTIONS_AMOUNT - 1);
+
+  unsigned long quantity_to_show = quantity > this->QUESTIONS_AMOUNT
+                                       ? this->QUESTIONS_AMOUNT
+                                       : quantity;
+
+  // Order questions with the same correct amount value in ascending order
+  unsigned ref = 0;
+  for (unsigned i = 1; i < this->QUESTIONS_AMOUNT; ++i) {
+    if (this->questions[i].get_correct_amount() !=
+        this->questions[ref].get_correct_amount()) {
+      if (i - ref > 1) {
+        Sort::questions(this->questions, ref, i - 1);
+        ref = i;
+      } else {
+        ref += 1;
+      }
+    }
+  }
+
+  for (unsigned i = 0; i < quantity_to_show; ++i) {
+    std::cout << "Question " << this->questions[i].get_number()
+              << " - Hits: " << this->questions[i].get_correct_amount() << std::endl;
   }
 }

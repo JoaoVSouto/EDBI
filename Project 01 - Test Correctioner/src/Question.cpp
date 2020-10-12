@@ -24,6 +24,10 @@ void Question::set_blank_amount(unsigned blank_amount) {
   this->blank_amount = blank_amount;
 }
 
+unsigned Question::get_number() {
+  return this->number;
+}
+
 unsigned Question::get_correct_amount() {
   return this->correct_amount;
 }
