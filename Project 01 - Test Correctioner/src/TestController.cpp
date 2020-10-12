@@ -173,3 +173,30 @@ void TestController::worst_questions(unsigned long quantity) {
               << " - Misses: " << this->questions[i].get_incorrect_amount() << std::endl;
   }
 }
+
+void TestController::blank_questions(unsigned long quantity) {
+  Sort::blank_questions(this->questions, 0, this->QUESTIONS_AMOUNT - 1);
+
+  unsigned long quantity_to_show = quantity > this->QUESTIONS_AMOUNT
+                                       ? this->QUESTIONS_AMOUNT
+                                       : quantity;
+
+  // Order questions with the same blank amount value in ascending order
+  unsigned ref = 0;
+  for (unsigned i = 1; i < this->QUESTIONS_AMOUNT; ++i) {
+    if (this->questions[i].get_blank_amount() !=
+        this->questions[ref].get_blank_amount()) {
+      if (i - ref > 1) {
+        Sort::questions(this->questions, ref, i - 1);
+        ref = i;
+      } else {
+        ref += 1;
+      }
+    }
+  }
+
+  for (unsigned i = 0; i < quantity_to_show; ++i) {
+    std::cout << "Question " << this->questions[i].get_number()
+              << " - Blanks: " << this->questions[i].get_blank_amount() << std::endl;
+  }
+}

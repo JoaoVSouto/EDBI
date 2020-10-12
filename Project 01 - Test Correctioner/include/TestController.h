@@ -26,6 +26,7 @@ class TestController {
   void worst_candidates(unsigned long quantity);
   void best_questions(unsigned long quantity);
   void worst_questions(unsigned long quantity);
+  void blank_questions(unsigned long quantity);
 };
 
 #endif  // !TEST_CONTROLLER_H

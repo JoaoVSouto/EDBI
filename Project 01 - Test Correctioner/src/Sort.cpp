@@ -130,6 +130,43 @@ int Sort::partition_worst_questions(Question* questions, int left, int right) {
   return right;
 }
 
+int Sort::partition_blank_questions(Question* questions, int left, int right) {
+  int pivot_pos = left;
+  Question pivot = questions[pivot_pos];
+
+  while (left < right) {
+    // Compares all the questions that are NOT blank
+    while (questions[left].get_correct_amount() +
+               questions[left].get_incorrect_amount() -
+               questions[left].get_blank_amount() <=
+           pivot.get_correct_amount() +
+               pivot.get_incorrect_amount() -
+               pivot.get_blank_amount()) {
+      left += 1;
+    }
+
+    while (questions[right].get_correct_amount() +
+               questions[right].get_incorrect_amount() -
+               questions[right].get_blank_amount() >
+           pivot.get_correct_amount() +
+               pivot.get_incorrect_amount() -
+               pivot.get_blank_amount()) {
+      right -= 1;
+    }
+
+    if (left < right) {
+      Question aux = questions[left];
+      questions[left] = questions[right];
+      questions[right] = aux;
+    }
+  }
+
+  questions[pivot_pos] = questions[right];
+  questions[right] = pivot;
+
+  return right;
+}
+
 void Sort::best_candidates(Candidate* candidates, int left, int right) {
   if (left < right) {
     int pivot_position = Sort::partition_best_candidates(candidates, left, right);
@@ -167,5 +204,13 @@ void Sort::worst_questions(Question* questions, int left, int right) {
     int pivot_position = Sort::partition_worst_questions(questions, left, right);
     Sort::worst_questions(questions, left, pivot_position - 1);
     Sort::worst_questions(questions, pivot_position + 1, right);
+  }
+}
+
+void Sort::blank_questions(Question* questions, int left, int right) {
+  if (left < right) {
+    int pivot_position = Sort::partition_blank_questions(questions, left, right);
+    Sort::blank_questions(questions, left, pivot_position - 1);
+    Sort::blank_questions(questions, pivot_position + 1, right);
   }
 }

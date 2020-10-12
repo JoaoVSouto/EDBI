@@ -1715,8 +1715,8 @@ Giancarlos O D C R B A D D B A
 Dilsa A E C C A E D B D D
 Fernandina D D C E C A D D D A
 Chloe E A C D C A C C C A
-Fabíola A C C A D B C B B B
-Virgílio E D A A D A C B B A
+Fabíola A C Z A D B C B B B
+Virgílio E D Z A D A C B B A
 Cailany B D B D B C C E E E
 Dionísio B E D A A C E D E C
 Delfino E B A E E D E A D A
