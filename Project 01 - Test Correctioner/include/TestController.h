@@ -23,6 +23,7 @@ class TestController {
   ~TestController();
 
   void best_candidates(unsigned long quantity);
+  void worst_candidates(unsigned long quantity);
 };
 
 #endif  // !TEST_CONTROLLER_H

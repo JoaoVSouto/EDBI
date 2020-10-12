@@ -104,3 +104,16 @@ void TestController::best_candidates(unsigned long quantity) {
               << this->candidates[i].get_correct_answers() << std::endl;
   }
 }
+
+void TestController::worst_candidates(unsigned long quantity) {
+  Sort::worst_candidates(this->candidates, 0, this->candidates_size - 1);
+
+  unsigned long quantity_to_show = quantity > this->candidates_size
+                                       ? this->candidates_size
+                                       : quantity;
+
+  for (unsigned long i = 0; i < quantity_to_show; ++i) {
+    std::cout << this->candidates[i].get_name() << " - Erros: "
+              << this->candidates[i].get_wrong_answers() << std::endl;
+  }
+}

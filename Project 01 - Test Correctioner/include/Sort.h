@@ -6,9 +6,11 @@
 class Sort {
  private:
   static int partition_best_candidates(Candidate* candidates, int left, int right);
+  static int partition_worst_candidates(Candidate* candidates, int left, int right);
 
  public:
   static void best_candidates(Candidate* candidates, int left, int right);
+  static void worst_candidates(Candidate* candidates, int left, int right);
 };
 
 #endif  // !SORT_H
