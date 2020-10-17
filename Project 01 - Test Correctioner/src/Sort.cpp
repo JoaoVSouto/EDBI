@@ -83,11 +83,18 @@ int Sort::partition_best_questions(Question* questions, int left, int right) {
   Question pivot = questions[pivot_pos];
 
   while (left < right) {
-    while (questions[left].get_incorrect_amount() <= pivot.get_incorrect_amount()) {
+    // Compares all the questions that are NOT correct
+    while (questions[left].get_incorrect_amount() +
+               questions[left].get_blank_amount() <=
+           pivot.get_incorrect_amount() +
+               pivot.get_blank_amount()) {
       left += 1;
     }
 
-    while (questions[right].get_incorrect_amount() > pivot.get_incorrect_amount()) {
+    while (questions[right].get_incorrect_amount() +
+               questions[right].get_blank_amount() >
+           pivot.get_incorrect_amount() +
+               pivot.get_blank_amount()) {
       right -= 1;
     }
 
@@ -109,11 +116,18 @@ int Sort::partition_worst_questions(Question* questions, int left, int right) {
   Question pivot = questions[pivot_pos];
 
   while (left < right) {
-    while (questions[left].get_correct_amount() <= pivot.get_correct_amount()) {
+    // Compares all the questions that are NOT incorrect
+    while (questions[left].get_correct_amount() +
+               questions[left].get_blank_amount() <=
+           pivot.get_correct_amount() +
+               pivot.get_blank_amount()) {
       left += 1;
     }
 
-    while (questions[right].get_correct_amount() > pivot.get_correct_amount()) {
+    while (questions[right].get_correct_amount() +
+               questions[right].get_blank_amount() >
+           pivot.get_correct_amount() +
+               pivot.get_blank_amount()) {
       right -= 1;
     }
 
@@ -137,20 +151,16 @@ int Sort::partition_blank_questions(Question* questions, int left, int right) {
   while (left < right) {
     // Compares all the questions that are NOT blank
     while (questions[left].get_correct_amount() +
-               questions[left].get_incorrect_amount() -
-               questions[left].get_blank_amount() <=
+               questions[left].get_incorrect_amount() <=
            pivot.get_correct_amount() +
-               pivot.get_incorrect_amount() -
-               pivot.get_blank_amount()) {
+               pivot.get_incorrect_amount()) {
       left += 1;
     }
 
     while (questions[right].get_correct_amount() +
-               questions[right].get_incorrect_amount() -
-               questions[right].get_blank_amount() >
+               questions[right].get_incorrect_amount() >
            pivot.get_correct_amount() +
-               pivot.get_incorrect_amount() -
-               pivot.get_blank_amount()) {
+               pivot.get_incorrect_amount()) {
       right -= 1;
     }
 

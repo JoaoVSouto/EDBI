@@ -1703,7 +1703,7 @@ Renata C C A C A B D E C B
 Felipe C A B C D E D D A E
 Claudiana A A C A C E D B D B
 Arminda A E D C E C D A C A
-Rúbia S B D E A B D C A D
+Rúbia E B D E A B D C A D
 Ivana D A B A E D D B B W
 Andersen C B E S C D D E E A
 Florença B B A A D A D C B C

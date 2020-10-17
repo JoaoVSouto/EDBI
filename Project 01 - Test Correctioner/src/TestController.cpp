@@ -54,8 +54,6 @@ TestController::TestController(const std::string& file_path)
         this->questions[i].set_correct_amount(
             this->questions[i].get_correct_amount() + 1);
       } else if (alternative > 'E') {
-        this->questions[i].set_incorrect_amount(
-            this->questions[i].get_incorrect_amount() + 1);
         this->questions[i].set_blank_amount(
             this->questions[i].get_blank_amount() + 1);
       } else {
