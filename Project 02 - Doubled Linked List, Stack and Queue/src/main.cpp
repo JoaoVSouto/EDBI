@@ -1,18 +1,27 @@
 #include "DoubledLinkedList.hpp"
+#include "Stack.hpp"
 
 int main(int argc, char const *argv[]) {
   DoubledLinkedList<int> list;
+  Stack<int> stack;
 
-  list.insertAtBack(1);
-  list.insertAtBack(3);
-  list.insertAt(2, 1);      // 1  2 3
-  list.insertAtFront(22);   // 22 1 2 3
-  list.removeAtBack();      // 22 1 2
-  list.insertAtFront(777);  // 777 22 1 2
-  list.insertAt(33, 3);     // 777 22 1 33 2
-  list.removeAtFront();     // 22 1 33 2
-  list.insertAtBack(777);   //  22 1 33 2 777
-  list.print();
+  stack.push(10);
+  stack.push(20);
+  stack.push(30);
+  stack.push(40);
+  std::cout << "top: " << stack.top() << std::endl;
+  stack.pop();
+  std::cout << "size: " << stack.size() << std::endl;
+  std::cout << "top: " << stack.top() << std::endl;
+  stack.pop();
+  stack.pop();
+  stack.pop();
+  std::cout << "size: " << stack.size() << std::endl;
+  stack.push(33);
+  stack.push(21);
+  std::cout << "size: " << stack.size() << std::endl;
+  stack.pop();
+  std::cout << "top: " << stack.top() << std::endl;
 
   return 0;
 }

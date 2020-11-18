@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-#include <limits>
 
 template <typename T>
 class DoubledLinkedList {
@@ -23,11 +22,8 @@ class DoubledLinkedList {
 
   void print() {
     if (size() == 0) {
-      std::cout << "A lista não possui nenhum elemento para ser mostrado!" << std::endl;
       return;
     }
-
-    std::cout << "Imprimindo lista:" << std::endl;
 
     Node* current = first;
 
@@ -38,8 +34,6 @@ class DoubledLinkedList {
   }
 
   void insertAtFront(T value) {
-    std::cout << "Inserindo elemento no início da lista: " << value << std::endl;
-
     Node* newNode = new Node();
     newNode->value = value;
 
@@ -60,8 +54,6 @@ class DoubledLinkedList {
   }
 
   void insertAtBack(T value) {
-    std::cout << "Inserindo elemento no final da lista: " << value << std::endl;
-
     Node* newNode = new Node();
     newNode->value = value;
 
@@ -92,9 +84,6 @@ class DoubledLinkedList {
       return;
     }
 
-    std::cout << "Inserindo elemento na posição "
-              << position << " da lista: " << value << std::endl;
-
     size_t currentPosition = 0;
     Node* currentNode = this->first;
 
@@ -116,11 +105,9 @@ class DoubledLinkedList {
 
   void removeAtFront() {
     if (this->size() == 0) {
-      std::cout << "A lista não possui nenhum elemento para ser removido!" << std::endl;
+      // WARN: invalid case
       return;
     }
-
-    std::cout << "Removendo elemento do início da lista" << std::endl;
 
     if (this->size() == 1) {
       delete this->first;
@@ -144,11 +131,9 @@ class DoubledLinkedList {
 
   void removeAtBack() {
     if (this->size() == 0) {
-      std::cout << "A lista não possui nenhum elemento para ser removido!" << std::endl;
+      // WARN: invalid case
       return;
     }
-
-    std::cout << "Removendo elemento do final da lista" << std::endl;
 
     if (this->size() == 1) {
       delete this->last;
@@ -181,9 +166,6 @@ class DoubledLinkedList {
       return;
     }
 
-    std::cout << "Removendo elemento da posição "
-              << position << " da lista" << std::endl;
-
     size_t currentPosition = 0;
     Node* currentNode = this->first;
 
@@ -201,10 +183,6 @@ class DoubledLinkedList {
 
   size_t size() {
     return this->nodeCount;
-  }
-
-  void print_size() {
-    std::cout << "Tamanho da lista: " << this->size() << std::endl;
   }
 
  private:
