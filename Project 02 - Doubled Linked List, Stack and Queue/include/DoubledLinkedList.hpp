@@ -10,7 +10,7 @@ class DoubledLinkedList {
       return;
     }
 
-    Node* current = first;
+    Node* current = this->first;
 
     do {
       Node* tmp = current;

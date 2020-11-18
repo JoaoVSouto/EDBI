@@ -3,9 +3,9 @@
 #include <iostream>
 
 template <typename T>
-class Stack {
+class Queue {
  public:
-  ~Stack() {
+  ~Queue() {
     if (this->size() == 0) {
       return;
     }
@@ -20,28 +20,39 @@ class Stack {
     } while (current != nullptr);
   }
 
-  void push(T value) {
+  void pushBack(T value) {
     Node* newNode = new Node();
     newNode->value = value;
 
-    Node* tmpNode = this->first;
-    this->first = newNode;
-    this->first->next = tmpNode;
+    if (this->size() == 0) {
+      this->first = newNode;
+      this->last = newNode;
+
+      this->nodeCount++;
+
+      return;
+    }
+
+    Node* tmpNode = this->last;
+    this->last = newNode;
+    tmpNode->next = this->last;
 
     this->nodeCount++;
   }
 
-  T top() {
+  void popFront() {
     if (this->size() == 0) {
-      // TODO: throw an error
+      return;
     }
 
-    return this->first->value;
-  }
+    if (this->size() == 1) {
+      delete this->first;
 
-  void pop() {
-    if (this->size() == 0) {
-      // WARN: invalid case
+      this->first = nullptr;
+      this->last = nullptr;
+
+      this->nodeCount--;
+
       return;
     }
 
@@ -51,6 +62,22 @@ class Stack {
     delete tmpNode;
 
     this->nodeCount--;
+  }
+
+  T front() {
+    if (this->size() == 0) {
+      // TODO: ???
+    }
+
+    return this->first->value;
+  }
+
+  T back() {
+    if (this->size() == 0) {
+      // TODO: ???
+    }
+
+    return this->last->value;
   }
 
   size_t size() {
@@ -64,5 +91,6 @@ class Stack {
   };
 
   Node* first = nullptr;
+  Node* last = nullptr;
   size_t nodeCount = 0;
 };
