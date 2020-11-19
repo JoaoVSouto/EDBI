@@ -1,0 +1,13 @@
+stack push 10
+list insertAtBack 1
+list insertAtBack 3
+list insertAt 2 1
+list print
+stack top
+stack pop
+stack size
+queue insert 10
+queue insert 20
+queue popFront
+queue front
+queue back
