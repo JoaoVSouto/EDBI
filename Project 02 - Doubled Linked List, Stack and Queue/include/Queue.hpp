@@ -66,7 +66,7 @@ class Queue {
 
   T front() {
     if (this->size() == 0) {
-      // TODO: ???
+      throw "Empty queue";
     }
 
     return this->first->value;
@@ -74,7 +74,7 @@ class Queue {
 
   T back() {
     if (this->size() == 0) {
-      // TODO: ???
+      throw "Empty queue";
     }
 
     return this->last->value;

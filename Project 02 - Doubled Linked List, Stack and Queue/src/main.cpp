@@ -7,7 +7,7 @@
 #include "Queue.hpp"
 #include "Stack.hpp"
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const* argv[]) {
   if (argc == 1) {
     std::cout << "Usage: " << argv[0] << " <path to instructions file>" << std::endl;
     return 1;
@@ -89,7 +89,13 @@ int main(int argc, char const *argv[]) {
         std::cout << "Inserindo elemento na pilha: " << value << std::endl;
         stack.push(value);
       } else if (!operation.compare("top")) {
-        std::cout << "Elemento do topo da pilha: " << stack.top() << std::endl;
+        try {
+          int top = stack.top();
+          std::cout << "Elemento do topo da pilha: " << top << std::endl;
+        } catch (char const* error) {
+          std::cout << "Não foi possível acessar o elemento do topo da pilha: "
+                    << error << std::endl;
+        }
       } else if (!operation.compare("pop")) {
         std::cout << "Removendo elemento da pilha" << std::endl;
         stack.pop();
@@ -99,7 +105,7 @@ int main(int argc, char const *argv[]) {
     }
 
     if (!structure.compare("queue")) {
-      if (!operation.compare("insert")) {
+      if (!operation.compare("pushBack")) {
         int value;
         stream >> value;
 
@@ -109,9 +115,21 @@ int main(int argc, char const *argv[]) {
         std::cout << "Removendo elemento da fila" << std::endl;
         queue.popFront();
       } else if (!operation.compare("front")) {
-        std::cout << "Primeiro elemento da fila: " << queue.front() << std::endl;
+        try {
+          int front = queue.front();
+          std::cout << "Primeiro elemento da fila: " << front << std::endl;
+        } catch (char const* error) {
+          std::cout << "Não foi possível acessar o primeiro elemento da fila: "
+                    << error << std::endl;
+        }
       } else if (!operation.compare("back")) {
-        std::cout << "Último elemento da fila: " << queue.back() << std::endl;
+        try {
+          int back = queue.back();
+          std::cout << "Último elemento da fila: " << back << std::endl;
+        } catch (char const* error) {
+          std::cout << "Não foi possível acessar o último elemento da fila: "
+                    << error << std::endl;
+        }
       } else if (!operation.compare("size")) {
         std::cout << "Tamanho da fila: " << queue.size() << std::endl;
       }

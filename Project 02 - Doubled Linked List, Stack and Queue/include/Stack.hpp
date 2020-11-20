@@ -33,7 +33,7 @@ class Stack {
 
   T top() {
     if (this->size() == 0) {
-      // TODO: throw an error
+      throw "Empty stack";
     }
 
     return this->first->value;
