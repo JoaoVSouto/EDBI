@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <list>
+#include <regex>
 #include <sstream>
 #include <string>
 
@@ -34,6 +35,31 @@ int main(int argc, char const* argv[]) {
 
     Word word(dictionary_line);
     dictionary.push_back(word);
+  }
+
+  std::ifstream target_file(target_file_path);
+
+  if (not target_file or not target_file.is_open()) {
+    std::cout << "Unable to open: " << target_file_path << std::endl;
+    return 1;
+  }
+
+  std::string target_line;
+
+  while (std::getline(target_file, target_line)) {
+    if (target_line.length() == 0) continue;
+
+    std::regex r("[a-zA-Z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u024F]+");
+
+    std::sregex_iterator iter(target_line.begin(), target_line.end(), r);
+    std::sregex_iterator end;
+
+    while (iter != end) {
+      for (unsigned i = 0; i < iter->size(); ++i) {
+        std::cout << (*iter)[i] << std::endl;
+      }
+      ++iter;
+    }
   }
 
   // std::cout << levenshtein<std::string>("casa", "carro") << std::endl;
