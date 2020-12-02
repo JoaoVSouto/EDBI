@@ -49,20 +49,41 @@ int main(int argc, char const* argv[]) {
   while (std::getline(target_file, target_line)) {
     if (target_line.length() == 0) continue;
 
-    std::regex r("[a-zA-Z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u024F]+");
+    std::regex word_regex("[a-zA-Z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u024F]+");
 
-    std::sregex_iterator iter(target_line.begin(), target_line.end(), r);
+    std::sregex_iterator iter(target_line.begin(), target_line.end(), word_regex);
     std::sregex_iterator end;
 
     while (iter != end) {
       for (unsigned i = 0; i < iter->size(); ++i) {
-        std::cout << (*iter)[i] << std::endl;
+        std::string word((*iter)[i]);
+        std::string word_without_double_angle(word);
+
+        if (word.find("«") != std::string::npos or
+            word.find("»") != std::string::npos) {
+          std::regex double_angle_regex("[«»]+");
+
+          word_without_double_angle =
+              std::regex_replace(word, double_angle_regex, "");
+
+          if (word_without_double_angle.length() == 0) {
+            continue;
+          }
+        }
+
+        std::transform(word_without_double_angle.begin(),
+                       word_without_double_angle.end(),
+                       word_without_double_angle.begin(),
+                       ::tolower);
+
+        std::cout << word_without_double_angle << std::endl;
       }
+
       ++iter;
     }
   }
 
-  // std::cout << levenshtein<std::string>("casa", "carro") << std::endl;
+  // std::cout << levenshtein<std::string>("casa", "CASA") << std::endl;
 
   return 0;
 }
