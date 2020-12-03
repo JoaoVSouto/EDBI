@@ -1,10 +1,20 @@
 #include "Word.h"
 
-Word::Word(const std::string& name) : name(name), score(0) {
+#include <algorithm>
+
+Word::Word(const std::string& name) : name(name), lowercased_name(name), score(0) {
+  std::transform(this->lowercased_name.begin(),
+                 this->lowercased_name.end(),
+                 this->lowercased_name.begin(),
+                 ::tolower);
 }
 
 std::string Word::get_name() {
   return this->name;
+}
+
+std::string Word::get_lowercased_name() {
+  return this->lowercased_name;
 }
 
 size_t Word::get_score() {
