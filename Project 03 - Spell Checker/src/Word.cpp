@@ -10,3 +10,7 @@ std::string Word::get_name() {
 size_t Word::get_score() {
   return this->score;
 }
+
+void Word::set_score(size_t score) {
+  this->score = score;
+}

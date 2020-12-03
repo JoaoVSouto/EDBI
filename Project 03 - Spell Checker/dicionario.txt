@@ -1548,6 +1548,7 @@ abrancar
 abranchense
 abrandadura
 abrangência
+abrangendo
 abrangente
 abranger
 abrangidura
@@ -1689,6 +1690,7 @@ abrideiro
 abridela
 abridura
 Abrienda
+abriga
 abrigadoiro
 abrigadouro
 abrigar
@@ -2233,6 +2235,9 @@ acadêmia
 academial
 academiar
 academiazinha
+academica
+acadêmica
+acadêmicas
 academicial
 academicidade
 academicista
@@ -2243,6 +2248,7 @@ acadêmico
 acadêmico-científico
 acadêmico-científico-cultural
 acadêmico-profissional
+acadêmicos
 academiforme
 academismo
 academístico
@@ -4365,6 +4371,7 @@ açoeiro
 acoela
 acoelhar
 acoélio
+ações
 ações-reações
 açofaifa
 açofaita
@@ -4505,6 +4512,7 @@ aconselhadeira
 aconselhar
 aconselhável
 aconsonantar
+acontecem
 acontecer
 acontecimental
 acontecível
@@ -4731,6 +4739,7 @@ acrense
 acreozaste
 acrépalo
 acresção
+acrescentando
 acrescentar
 acrescentável
 acrescentos
@@ -6540,6 +6549,7 @@ administrativístico
 administrativo
 administrativo-financeiro
 Administrativo-Financeiro
+administrativos
 administratório
 administrável
 admirábil
@@ -8091,6 +8101,7 @@ agemado
 agêmate
 agenceio
 agência
+agências
 agenciação
 agenciadeira
 agenciar
@@ -8760,6 +8771,7 @@ agrumelar
 agrumetar
 agrumular
 agrupação
+agrupamento
 agrupar
 agrupável
 agrura
@@ -12366,6 +12378,7 @@ alinegro
 alinevoso
 alinfia
 alinguetar
+alinha
 alinhar
 alinhavadeira
 alinhavar
@@ -18629,6 +18642,7 @@ anfíssio
 anfístomo
 anfítana
 anfítapa
+anfiteatro
 anfíteno
 Anfito
 anfítoca
@@ -20183,6 +20197,7 @@ anortosítico
 anortosito
 anortótico
 anoruegado
+anos
 anos-base
 anos-bons
 anos-calendário
@@ -21931,6 +21946,7 @@ aortostenia
 aortostênico
 aortostenose
 aortostenótico
+aos
 aós
 aoto
 AP
@@ -23213,6 +23229,7 @@ aprendizes-marinheiros
 aprensado
 aprepitanto
 apresbiterar-se
+apresenta
 apresentação
 apresentar
 apresentável
@@ -24989,6 +25006,7 @@ areanense
 areão
 areãozense
 arear
+áreas
 áreas-alvo
 áreas-chaves
 áreas-cliente
@@ -26384,6 +26402,7 @@ arquitetação
 arquitetar
 arquitetável
 arquiteto
+arquitetônico
 arquitetonografia
 arquitetonográfico
 arquitetonógrafo
@@ -26832,6 +26851,7 @@ arrojadiço
 arrojadite
 arrojadítico
 arrojadito
+arrojado
 arrojadura
 arrojeitar
 arrojeito
@@ -29646,6 +29666,7 @@ atlético
 Atlético-GO
 Atlético-MG
 Atlético-PR
+atletismo
 atloide
 atloidiano
 atlóteta
@@ -30065,12 +30086,14 @@ attaché
 atto
 attoampere
 attolitro
+atua
 atuação
 atual
 atualístico
 atualização
 atualizar
 atualizável
+atualmente
 atuar
 atuaré
 atuarial
@@ -30300,6 +30323,7 @@ aulaconiácea
 aulacônio
 aulacóstomo
 aularca
+aulas
 áulax
 aulaxina
 aulerco
@@ -34759,7 +34783,10 @@ bancal
 bancalé
 bancão
 bancar
+bancária
+bancárias
 bancário
+bancários
 bancarrota
 bancarrotear
 bancarroteiro
@@ -45763,6 +45790,7 @@ brasileína
 brasileínico
 Brasileira-PI
 brasileirada
+brasileiras
 brasileirense
 brasileiresco
 brasileirice
@@ -52844,6 +52872,7 @@ caminhar
 caminheiro
 caminhense
 caminheta
+caminho
 caminho de rato
 Caminhoá
 caminhões-baú
@@ -53173,6 +53202,7 @@ Campo-SP
 campomaiorense
 camponês
 campônio
+campos
 Campos-AL
 campos-altense
 Campos-BA
@@ -59293,6 +59323,7 @@ carripana
 carripoila
 carripoto
 carripoula
+carro
 carro-bomba
 carro-chefe
 carro-conceito
@@ -64112,6 +64143,7 @@ centropomo
 centropriste
 centroprístis
 centróscelo
+centros
 centroscimno
 centroscopia
 centroscópico
@@ -64460,6 +64492,7 @@ cerberitina
 cerberitínico
 cérbero
 cerbolita
+cerca
 cerca-lourenço
 cerca-peru
 cercadeira
@@ -69979,6 +70012,7 @@ circuncluso
 circuncrescência
 circuncrescente
 circundação
+circundado
 circundantemente
 circundar
 circundenudação
@@ -70764,6 +70798,7 @@ civ.
 cível
 civeto
 civetona
+cívica
 civicamente
 cívico
 cívico-militar
@@ -75319,6 +75354,7 @@ commelíneo
 commelinídio
 commeliníneo
 commoditie
+como
 comocional
 comocionar
 comocládia
@@ -75560,6 +75596,7 @@ complexionado
 complexional
 complexismo
 complexivo
+complexo
 complexometria
 complexométrico
 complexos
@@ -75611,7 +75648,9 @@ compostado
 compostagem
 Compostela
 compostelano
+composto
 compostor
+compostos
 compostura
 compota
 compoteira
@@ -75775,6 +75814,8 @@ comunicativo
 comunicável
 comunicologia
 comunicólogo
+comunidade
+comunidades
 comuníssimo
 comunístico
 comunistoide
@@ -76044,6 +76085,7 @@ concludir
 concluente
 concluinte
 concluir
+concluída
 concluível
 conclusão
 conclusionista
@@ -76949,6 +76991,7 @@ conhecença
 conhecente
 conhecer
 conhecidíssimo
+conhecimento
 conhecível
 conho
 coni-conió
@@ -77282,6 +77325,7 @@ conselheiro-paulinense
 conselheiro-penense
 conselheiro-zacariense
 conselho
+conselhos
 Conselho-PE
 consemelhança
 consemelhante
@@ -77445,6 +77489,7 @@ constitucional
 constitucionalização
 constitucionalizar
 constituição
+constituindo
 constituinte
 constituir
 constituível
@@ -77524,6 +77569,7 @@ consuntivo
 consunto
 consútil
 cont.
+conta
 conta-corrente
 Conta-Corrente
 conta-correntista
@@ -80112,6 +80158,7 @@ correio
 correio-da-tarde
 correio-geral
 correio-mor
+correios
 correios-da-tarde
 correios-gerais
 correios-mores
@@ -82594,6 +82641,7 @@ cria
 criação
 criacionismo
 criacionístico
+criada
 criadagem
 criadeiro
 criadilha
@@ -82621,6 +82669,7 @@ criancinha
 crianço
 criançola
 criandário
+criando
 crianestesia
 crianestésico
 crianestético
@@ -85360,8 +85409,10 @@ cuiuira
 cuiumari
 cuiumarirana
 cuiura
+cuja
 cujamarioba
 cujara
+cujas
 cuje
 cujelo
 cujeté
@@ -86109,6 +86160,7 @@ curacimirá
 curadá
 curadeiro
 curadia
+curadores
 curadoria
 curagem
 curairi
@@ -86404,6 +86456,7 @@ cursoríneo
 cursório
 cursorípede
 cursoripedia
+cursos
 curt.
 curta-metragem
 curta-metragista
@@ -87098,6 +87151,7 @@ d'outro
 d-xilose
 D.
 d.C.
+da
 dã
 dabá
 dabada
@@ -87554,6 +87608,7 @@ Darvina
 Darwin
 darwiniano
 darwinismo
+das
 dasatinibe
 dasim.
 dasípode
@@ -88250,6 +88305,7 @@ decréscimo
 decretação
 decretal
 decretar
+decreto
 decreto-lei
 Decreto-Lei
 decretório
@@ -89061,6 +89117,7 @@ departamentalização
 departamentalizar
 departamentalizável
 departamento
+departamentos
 departição
 departir
 depascente
@@ -89068,6 +89125,7 @@ depauperação
 depauperar
 depenar
 dependência
+dependendo
 dependente
 depender
 dependurar
@@ -90550,6 +90608,7 @@ desenvoltoso
 desenvolução
 desenvolvimentismo
 desenvolvimentístico
+desenvolvimento
 desenvolvível
 desenxabidamente
 desenxabir
@@ -94402,6 +94461,7 @@ diferençal
 diferençar
 diferençável
 diferenciação
+diferenciado
 diferencial
 diferenciar
 diferenciativo
@@ -94412,6 +94472,7 @@ diferenciométrico
 diferenciômetro
 diferendo
 diferente
+diferentes
 diferir
 diferível
 difetarsona
@@ -96090,12 +96151,14 @@ discinésico
 discinético
 discinídeo
 discinisco
+disciplina
 disciplinação
 disciplinantemente
 disciplinar
 disciplinaridade
 disciplinário
 disciplinarização
+disciplinas
 disciplinativo
 disciplinatório
 disciplinável
@@ -98504,6 +98567,7 @@ Dort
 dorzinha
 dorzita
 dorzolamida
+dos
 dôs
 dosagem
 dosar
@@ -100815,6 +100879,7 @@ efetivar
 efetivável
 efetível
 efetivo
+efetivos
 efetonina
 efetor
 efetozol
@@ -106787,6 +106852,7 @@ ensinança
 ensinar
 ensinativo
 ensinável
+ensino
 ensino-aprendizagem
 Ensino-Aprendizagem
 ensinos
@@ -107427,6 +107493,7 @@ entrave
 entravessar
 entraviscar
 entraz
+entre
 entre-eixo
 entre-escolher
 entre-escutar
@@ -112034,6 +112101,7 @@ escoimar
 escoira
 escoiral
 escol
+escola
 escola-cantina
 escola-empresa
 Escola-Empresa
@@ -112052,6 +112120,7 @@ escolaridadezinha
 escolarização
 escolarizar
 escolarizável
+escolas
 escolas-cantina
 escolas-modelo
 escolást.
@@ -114202,6 +114271,8 @@ especiação
 especial
 especialístico
 especialização
+especializada
+especializadas
 especializar
 especializável
 especialm.
@@ -114225,6 +114296,8 @@ especificável
 especificidade
 especificismo
 especificístico
+específica
+específicas
 específico
 especifidade
 especilho
@@ -114587,6 +114660,7 @@ espetacularização
 espetaculização
 espetaculizar
 espetáculo
+espetáculos
 espetaculoso
 espetadela
 espetalar
@@ -115663,6 +115737,8 @@ esporte
 esporteirar
 esportela
 esportístico
+esportiva
+esportivas
 esportivismo
 esportivo
 espórtula
@@ -116130,6 +116206,7 @@ esquizotriquia
 esquizozoideo
 esquizozoito
 Esron
+essa
 essaísta
 esse
 essedão
@@ -116166,6 +116243,7 @@ estabareda
 estabelecedoiro
 estabelecedouro
 estabelecer
+estabeleceu
 estabelecível
 estabiano
 estabilidadezinha
@@ -116223,6 +116301,7 @@ estadismo
 estadístico
 estadização
 estadizar
+estado
 estado da arte
 Estado-Administração
 estado-cliente
@@ -119026,6 +119105,7 @@ estudantal
 estudantão
 estudante-trabalhador
 estudanteco
+estudantes
 estudantesco
 estudantezinho
 estudantil
@@ -120641,6 +120721,7 @@ evenino
 evenque
 eventivo
 evento
+eventos
 eventração
 eventrar
 eventual
@@ -121291,6 +121372,7 @@ execrável
 execução
 executar
 executável
+executiva
 executiva-chefe
 executivas-chefes
 executivo
@@ -121423,6 +121505,7 @@ existência
 existencial
 existencialístico
 existente
+existentes
 existentivo
 existir
 existível
@@ -122435,6 +122518,7 @@ factual
 façudo
 fácula
 faculdade
+faculdades
 facultar
 facultativo
 facultável
@@ -124532,9 +124616,11 @@ feder
 federação
 federacionismo
 federacionístico
+federais
 federal
 federalístico
 federalização
+federalizada
 federalizar
 federar
 federativo
@@ -129822,6 +129908,7 @@ foguetório
 foguéu
 foguinho
 foguista
+foi
 foiaítico
 foiaíto
 foição
@@ -130488,6 +130575,7 @@ formação
 formacílico
 formacilo
 formacional
+formada
 formadura
 formal
 formaldeído
@@ -133750,6 +133838,7 @@ funcionalístico
 funcionalização
 funcionalizar
 funcionalizável
+funcionam
 funcionar
 funcionário
 funcionista
@@ -138481,6 +138570,7 @@ Geraldine
 geraldino
 Geraldo
 Geraldo-MG
+geralmente
 geralocroísmo
 geranato
 geraniáceo
@@ -142583,6 +142673,7 @@ Grande-SP
 grandear
 grandeira
 grandense
+grandes
 grandes-alexandres
 grandes-angulares
 grandes-calorias
@@ -145487,6 +145578,7 @@ h.mod.
 h.sag.
 ha
 hã
+há
 há-o
 há-se
 haástia
@@ -146733,6 +146825,7 @@ hectaedro
 hectagonal
 hectágono
 hectare
+hectares
 hectartropíneo
 hectártropo
 héctia
@@ -158053,6 +158146,7 @@ incentivação
 incentivantemente
 incentivar
 incentivável
+incentivo
 incentivos
 incentor
 inceptivo
@@ -158121,6 +158215,7 @@ inclinável
 Ínclito
 inclucação
 includir
+inclui
 incluir
 incluível
 inclusão
@@ -158298,6 +158393,7 @@ incuaia
 incubabilidade
 incubação
 incubadeira
+incubadora
 incubar
 incubato
 incubatório
@@ -159726,6 +159822,8 @@ inicializável
 iniciantemente
 iniciar
 iniciático
+iniciativa
+iniciativas
 iniciativo
 iniciatório
 iniciável
@@ -159948,6 +160046,8 @@ inotropísmico
 inotropismo
 inotropístico
 inótropo
+inova
+inovação
 inovativo
 inovatório
 inovável
@@ -160197,6 +160297,7 @@ instabilizante
 instabilizar
 instabilizável
 instalação
+instalada
 instalar
 instalável
 instaminado
@@ -160375,6 +160476,7 @@ intarvina
 intaúba
 integérrimo
 integr.
+integra
 integração
 integracionismo
 integracionístico
@@ -160384,6 +160486,7 @@ integralístico
 integralização
 integralizar
 integralizável
+integram
 integramente
 integrar
 integrativo
@@ -160558,6 +160661,8 @@ interdicional
 interdições-relâmpago
 interdisciplina
 interdisciplinar
+interdisciplinares
+interdisciplinaridade
 interdisciplinariedade
 interdisciplinarmente
 interdiscursivo
@@ -169575,6 +169680,7 @@ laborat.
 laborativo
 laboratorial
 laboratório
+laboratórios
 laborável
 laborda
 labordaça
@@ -177744,6 +177850,7 @@ Livramento-RS
 livrança
 livrar
 livraria
+livrarias
 livrável
 livre
 livre-alvedrio
@@ -182700,6 +182807,7 @@ Mairipotaba
 Mairipotaba-GO
 mairipotabense
 mairu
+mais
 mais que tudo
 mais-que-perfeito
 mais-valia
@@ -183366,6 +183474,7 @@ malgradado
 malgrado
 malgueiro
 malh.
+malha
 malha-ferreiro
 malha-pão
 malhaçada
@@ -186621,6 +186730,7 @@ marcos-velhos
 marcosiano
 marcosiense
 marcotão
+marcou
 marcoviano
 marcúbio
 marcuense
@@ -190731,6 +190841,7 @@ Médici-RO
 medicilandense
 Medicilândia
 Medicilândia-PA
+medicina
 medicinal
 medicinar
 medicineiro
@@ -193402,6 +193513,7 @@ mercadejável
 mercadização
 mercadizar
 mercadizável
+mercado
 mercado-alvo
 mercadologia
 mercadólogo
@@ -200526,6 +200638,7 @@ modicar
 modicidade
 módico
 modificação
+modificada
 modificar
 modificativo
 modificatório
@@ -207209,6 +207322,7 @@ n.p.pers.
 n.pr.
 N.SS.P.
 n.t.
+na
 Naã
 naalianismo
 naalianístico
@@ -212218,6 +212332,7 @@ nivator
 nive
 niveal
 niveína
+níveis
 nível
 nivelação
 nivelar
@@ -212260,6 +212375,7 @@ NNO
 NNW
 no
 nº
+n°
 nó
 nô
 no-break
@@ -213032,6 +213148,7 @@ norueguense
 norueguês
 norvalina
 norvinisterona
+nos
 nós-cegos
 nós-de-cachorro
 nós-do-diabo
@@ -213485,6 +213602,7 @@ noval
 novalense
 novalente
 novalgina
+novamente
 novaquita
 novar
 novariense
@@ -213588,6 +213706,7 @@ novisco
 novissilábico
 novissílabo
 novita
+novo
 novo-acordense
 novo-acrense
 novo-apuaense
@@ -213819,6 +213938,7 @@ nucleoproteína
 nucleoproteínico
 nucleoprotídeo
 nucleoquilema
+núcleos
 nucleose
 nucleosidase
 nucleosídase
@@ -213923,6 +214043,7 @@ nulivalente
 nulo
 num
 núm.
+numa
 Numair
 numantino
 numário
@@ -214285,6 +214406,7 @@ objetificação
 objetificar
 objetificável
 objetivação
+objetivando
 objetivar
 objetivável
 objetivístico
@@ -215564,6 +215686,7 @@ ofensão
 ofensivo
 ofenso
 ofensor
+oferece
 oferecer
 oferendar
 oferente
@@ -216883,6 +217006,8 @@ olimpíade
 olimpiádico
 olimpiano
 olimpicamente
+olímpica
+olímpicas
 olímpico
 olímpico-lopense
 olimpiense
@@ -217496,6 +217621,7 @@ ondarrábio
 ondas-maré
 ondas-piloto
 ondatra
+onde
 ondear
 ondeirada
 ondeiro
@@ -218330,6 +218456,8 @@ opórica
 oporínia
 opórino
 oporoteca
+oportunidade
+oportunidades
 oportunidadezinha
 oportunistamente
 oportunístico
@@ -218919,6 +219047,7 @@ organização
 organizacional
 organizadoro
 organizar
+organizaram
 organizativo
 organizatório
 organizatório-funcional
@@ -221208,9 +221337,12 @@ outonos
 outorgar
 outorgativo
 outorgável
+outra
+outras
 outrega
 outrem
 outro
+outros
 outrora
 outrossim
 outu
@@ -225946,6 +226078,7 @@ paquiviri
 paquíxifo
 par
 par-ou-pernão
+para
 pára
 Pará
 para-águas
@@ -228371,6 +228504,8 @@ partícula-espelho
 particulado
 particular
 particularístico
+particularidade
+particularidades
 particularização
 particularizar
 particularizativo
@@ -228902,6 +229037,7 @@ passos-dobres
 Passos-MG
 Passos-RS
 passota
+passou
 passr.
 passt.
 passuaré
@@ -233819,7 +233955,6 @@ pequiriense
 pequirina
 pequis-do-amazonas
 pequis-do-pará
-pequisa
 pequitinga
 pequizeirense
 pequizeiro
@@ -236617,6 +236752,7 @@ Pesqueira-PE
 pesqueirense
 pesqueirinhense
 pesqueiro
+pesquisa
 pesquisação
 pesquisar
 pesquisição
@@ -236702,6 +236838,7 @@ pessoalizável
 pessoano
 pessoaria
 pessoária
+pessoas
 pessoas-chave
 pessoeiro
 pessoense
@@ -241101,6 +241238,7 @@ piscifatura
 pisciforme
 piscina
 piscinal
+piscinas
 piscinão
 piscívoro
 pisco-azul
@@ -241170,6 +241308,7 @@ pissode
 pissofânio
 pissondora
 pissota
+pista
 pistaceira
 pistaceus
 pistache
@@ -244588,6 +244727,7 @@ poliergo
 poliérsida
 poliersídeo
 poliespermia
+poliesportivo
 poliesteatósico
 poliestesia
 poliestétilo
@@ -247126,6 +247266,7 @@ possoeiro
 possoelo
 possuca
 possues
+possui
 possuinte
 possuir
 possuquear
@@ -247820,6 +247961,8 @@ praticar
 praticável
 praticidade
 praticismo
+prática
+práticas
 prático
 prático-oral
 prático-profissional
@@ -248599,6 +248742,8 @@ preossístole
 preossistólico
 prep.
 preparação
+preparado
+preparados
 preparar
 preparativo
 preparatorial
@@ -249263,6 +249408,7 @@ principiável
 principículo
 principina
 princípio
+princípios
 Principio-RS
 principiologia
 principiológico
@@ -249412,6 +249558,8 @@ prius
 priv.
 privação
 privacidade
+privado
+privados
 privança
 privar
 privaticidade
@@ -249623,6 +249771,7 @@ processional
 processionar
 processionista
 processivo
+processo
 processo-chave
 processo-crime
 processologia
@@ -249916,6 +250065,7 @@ professoras-orientadoras
 professoras-praticantes
 professoras-tutoras
 professoreco
+professores
 professores-adjuntos
 professores-assistentes
 professores-associados
@@ -249963,6 +250113,7 @@ profissiógrafo
 profissiograma
 profissiologia
 profission.
+profissionais
 profissionais-padrão
 profissional
 profissional-padrão
@@ -250070,6 +250221,7 @@ projeção
 projecional
 projecionismo
 projetação
+projetada
 projetar
 projetável
 projéteis-foguete
@@ -260661,6 +260813,7 @@ reforçativo
 reforços
 reforçozinho
 reform.
+reforma
 reformatório
 reformatriz
 reformazinha
@@ -261089,6 +261242,7 @@ reitorato
 reitorável
 reitoria
 reitoriado
+reitorias
 reitorizar
 reitre
 reitrodilo
@@ -261121,6 +261275,8 @@ rejuvenescente
 rel.
 relaç.
 relacionação
+relacionada
+relacionadas
 relacional
 relacionamento-relâmpago
 relacionamentos-relâmpago
@@ -261638,6 +261794,7 @@ reomotor
 reônomo
 reopção
 reopexia
+reorganização
 reorquestrável
 reoscopia
 reoscópico
@@ -262344,6 +262501,7 @@ resulho
 result.
 resultância
 resultar
+resultaram
 resultativo
 resumir
 resumitivo
@@ -263848,6 +264006,7 @@ rins-de-boi
 rinto
 rintônico
 rinusa
+rio
 rio-acimense
 rio-afonsense
 rio-alegrense
@@ -270287,6 +270446,7 @@ santuense
 santulha
 santulhana
 sanzala
+são
 são-barnabeense
 são-bartolomeense
 são-beneditense
@@ -272647,6 +272807,7 @@ seguidismo
 seguidista
 seguiéria
 seguilhote
+seguindo
 seguinte
 seguintemente
 seguir
@@ -272777,6 +272938,7 @@ seixeiro
 seixo
 seixoeira
 seixoso
+seja
 sejagão
 séjana
 sejaria
@@ -274790,6 +274952,8 @@ serviços-chave
 servidãozinha
 servidiço
 servidõezinhas
+servidor
+servidores
 servidume
 serviente
 servieta
@@ -275152,6 +275316,7 @@ seu-vizinho
 Seul
 seurbo
 seuropão
+seus
 seus-vizinhos
 seutera
 seutil
@@ -279284,6 +279449,7 @@ somali
 Somália
 somaliano
 Somalilândia
+somam
 somantadina
 somar
 somático
@@ -280184,6 +280350,7 @@ stuzita
 su-sudeste
 su-sudoeste
 su-sueste
+sua
 suábio
 suabite
 suaço
@@ -283871,6 +284038,7 @@ talentaço
 talentão
 talentário
 talento
+talentos
 talentometria
 talentométrico
 talentômetro
@@ -286480,6 +286648,8 @@ tecnoletal
 tecnoleto
 tecnólito
 tecnologia
+tecnológica
+tecnológico
 tecnológico-eletrônico
 tecnológico-robótico
 tecnologismo
@@ -287361,6 +287531,7 @@ telurográfico
 telurógrafo
 telurômetro
 teluroso
+tem
 tem-te-lá
 tem-te-na-raiz
 tem-te-não-caias
@@ -289959,6 +290130,7 @@ teutônico
 teutoniense
 TeV
 tevá
+teve
 tevê
 teveasta
 teveástico
@@ -292628,6 +292800,7 @@ todo-o-terreno
 todo-poderoso
 todolos
 todópsis
+todos
 Todos-os-Santos
 todos-santense
 Todósia
@@ -294461,6 +294634,7 @@ trabalhável
 trabalheira
 trabalhiscar
 trabalhístico
+trabalho
 trabalhos
 trabalhoso
 trabalhucar
@@ -302468,6 +302642,7 @@ Ulysses-PR
 um
 um-contra-um
 um-sete-um
+uma
 Umabel
 umação
 umadíssimo
@@ -302982,7 +303157,9 @@ unicursal
 unicúspide
 unicúspido
 unid.
+unidade
 unidade-base
+unidades
 unidades-base
 unidátilo
 unidense
@@ -303205,7 +303382,10 @@ universalização
 universalizar
 universalizável
 universense
+universidade
+universidades
 universidadezinha
+universitária
 universitário
 universo
 universo-bolha
@@ -303508,6 +303688,7 @@ uratemia
 urb.
 Urban
 urban.
+urbana
 urbanístico
 urbanita
 urbanitário
@@ -309352,6 +309533,8 @@ visiotransmissão
 visita-relâmpago
 visitação
 visitandina
+visitante
+visitantes
 visitar
 visitável
 visiteio
@@ -309405,6 +309588,7 @@ vistar
 vistas-d'olhos
 vistatolona
 vistavisão
+visto
 vistor
 vistoriar
 vistoriável

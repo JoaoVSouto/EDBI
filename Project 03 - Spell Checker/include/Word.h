@@ -9,4 +9,6 @@ class Word {
 
   std::string get_name();
   size_t get_score();
+
+  void set_score(size_t score);
 };

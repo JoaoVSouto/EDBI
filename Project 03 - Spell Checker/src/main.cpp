@@ -76,14 +76,55 @@ int main(int argc, char const* argv[]) {
                        word_without_double_angle.begin(),
                        ::tolower);
 
-        std::cout << word_without_double_angle << std::endl;
+        bool found_equal = false;
+
+        // O(N)
+        for (auto& i : dictionary) {
+          std::string lowercased_name(i.get_name());
+
+          std::transform(lowercased_name.begin(),
+                         lowercased_name.end(),
+                         lowercased_name.begin(),
+                         ::tolower);
+
+          size_t score = levenshtein<std::string>(word_without_double_angle,
+                                                  lowercased_name);
+          i.set_score(score);
+
+          if (score == 0) {
+            found_equal = true;
+            break;
+          }
+        }
+
+        if (found_equal) {
+          continue;
+        }
+
+        // O(N * log N)
+        dictionary.sort([word_without_double_angle](Word& a, Word& b) -> bool {
+          return a.get_score() < b.get_score();
+        });
+
+        std::cout << word_without_double_angle << ":" << std::endl;
+
+        size_t counter = 0;
+        for (auto& i : dictionary) {
+          if (counter >= 5 or i.get_score() >= 3) {
+            break;
+          }
+
+          std::cout << "\t - " << i.get_name() << std::endl;
+
+          ++counter;
+        }
+
+        std::cout << std::endl;
       }
 
       ++iter;
     }
   }
-
-  // std::cout << levenshtein<std::string>("casa", "CASA") << std::endl;
 
   return 0;
 }
