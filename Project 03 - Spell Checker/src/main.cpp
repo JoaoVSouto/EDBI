@@ -4,7 +4,7 @@
 #include <regex>
 #include <sstream>
 #include <string>
-#include <unordered_map>
+#include <unordered_set>
 
 #include "Word.h"
 #include "levenshtein.h"
@@ -33,14 +33,14 @@ int main(int argc, char const* argv[]) {
 
   std::string dictionary_line;
   std::list<Word> dictionary;
-  std::unordered_map<std::string, bool> dictionary_map;
+  std::unordered_set<std::string> dictionary_set;
 
   while (std::getline(dictionary_file, dictionary_line)) {
     if (dictionary_line.length() == 0) continue;
 
     Word word(dictionary_line);
-    dictionary.push_back(word);                                 // O(1)
-    dictionary_map.insert({word.get_lowercased_name(), true});  // O(1)
+    dictionary.push_back(word);                         // O(1)
+    dictionary_set.insert(word.get_lowercased_name());  // Avg.: O(1)
   }
 
   std::ifstream target_file(target_file_path);
@@ -49,6 +49,8 @@ int main(int argc, char const* argv[]) {
     std::cout << "Unable to open: " << target_file_path << std::endl;
     return 1;
   }
+
+  std::unordered_set<std::string> checked_words;
 
   std::string target_line;
 
@@ -87,13 +89,27 @@ int main(int argc, char const* argv[]) {
 
         // Avg.: O(1)
         // Worst: O(N)
-        auto it = dictionary_map.find(current_lowercased_word);
+        auto dic_it = dictionary_set.find(current_lowercased_word);
 
-        bool does_word_exist_on_dictionary = it != dictionary_map.end();
+        bool does_word_exist_on_dictionary = dic_it != dictionary_set.end();
 
         if (does_word_exist_on_dictionary) {
           continue;
         }
+
+        // Avg.: O(1)
+        // Worst: O(N)
+        auto checked_words_it = checked_words.find(current_lowercased_word);
+
+        bool was_word_already_checked = checked_words_it != checked_words.end();
+
+        if (was_word_already_checked) {
+          continue;
+        }
+
+        // Avg.: O(1)
+        // Worst: O(N)
+        checked_words.insert(current_lowercased_word);
 
         std::list<Word> word_suggestions;
 
