@@ -89,35 +89,64 @@ int main(int argc, char const* argv[]) {
         // Worst: O(N)
         auto it = dictionary_map.find(current_lowercased_word);
 
-        if (it != dictionary_map.end()) {
+        bool does_word_exist_on_dictionary = it != dictionary_map.end();
+
+        if (does_word_exist_on_dictionary) {
           continue;
         }
 
-        // TODO: tentar jogar isso pra dentro do sort
+        std::list<Word> word_suggestions;
+
         // O(N)
         for (auto& i : dictionary) {
           size_t score = levenshtein<std::string>(current_lowercased_word,
                                                   i.get_lowercased_name());
           i.set_score(score);
+
+          if (score < SUGGESTIONS_THRESHOLD) {
+            if (word_suggestions.size() < SUGGESTIONS_LIMIT) {
+              word_suggestions.push_back(i);
+              continue;
+            }
+
+            // O(n)
+            auto iter = std::find_if(word_suggestions.begin(),
+                                     word_suggestions.end(),
+                                     [&score](Word& word) {
+                                       return word.get_score() > score;
+                                     });
+
+            bool found_word_with_bigger_score = iter != word_suggestions.end();
+
+            if (found_word_with_bigger_score) {
+              // O(1)
+              word_suggestions.push_back(i);
+              // O(n)
+              word_suggestions.remove(*iter);
+            }
+
+            // O(n)
+            iter = std::find_if(word_suggestions.begin(),
+                                word_suggestions.end(),
+                                [](Word& word) {
+                                  return word.get_score() > 1;
+                                });
+
+            bool is_suggestions_full_with_good_ones = iter == word_suggestions.end();
+
+            if (is_suggestions_full_with_good_ones) {
+              break;
+            }
+          }
         }
 
         // O(N * log N)
-        dictionary.sort([](Word& a, Word& b) -> bool {
-          return a.get_score() < b.get_score();
-        });
+        word_suggestions.sort();
 
         std::cout << current_word << ":" << std::endl;
 
-        size_t counter = 0;
-        for (auto& i : dictionary) {
-          if (counter >= SUGGESTIONS_LIMIT or
-              i.get_score() >= SUGGESTIONS_THRESHOLD) {
-            break;
-          }
-
-          std::cout << "\t- " << i.get_name() << std::endl;
-
-          ++counter;
+        for (auto& i : word_suggestions) {
+          std::cout << "\t- " << i.get_name() << " - " << i.get_score() << std::endl;
         }
 
         std::cout << std::endl;

@@ -13,6 +13,10 @@ bool Word::operator<(Word& word) const {
   return this->score < word.get_score();
 }
 
+bool Word::operator==(const Word& word) const {
+  return !this->name.compare(word.name);
+}
+
 std::string Word::get_name() {
   return this->name;
 }

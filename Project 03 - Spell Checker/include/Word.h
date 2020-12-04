@@ -11,6 +11,7 @@ class Word {
   Word(const std::string& name);
 
   bool operator<(Word& word) const;
+  bool operator==(const Word& word) const;
 
   std::string get_name();
   std::string get_lowercased_name();
