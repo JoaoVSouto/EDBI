@@ -9,6 +9,10 @@ Word::Word(const std::string& name) : name(name), lowercased_name(name), score(0
                  ::tolower);
 }
 
+bool Word::operator<(Word& word) const {
+  return this->score < word.get_score();
+}
+
 std::string Word::get_name() {
   return this->name;
 }

@@ -2053,6 +2053,7 @@ aburrão
 aburrinhar
 abusão
 abusar
+abusava
 abusear
 abusinhão
 abusivo
@@ -12072,6 +12073,7 @@ alguivão
 algum
 algumia
 algumim
+alguns
 algur
 algurandear
 algurevão
@@ -12533,6 +12535,7 @@ allenita
 allevardita
 alliônia
 alluandita
+alma
 alma-aflita
 alma-danada
 alma-de-biafada
@@ -20602,6 +20605,7 @@ anterreforma
 anterrepublicano
 anterrosto
 anterura
+antes
 antese
 antesfória
 antespolão
@@ -56541,6 +56545,7 @@ caquistia
 caquizalo
 caquizeiro
 car.
+cara
 cará
 cara de anjo
 cara de enterro
@@ -75438,6 +75443,7 @@ cômpar
 compar.
 comparação
 comparança
+comparando
 comparar
 comparascópio
 comparatibilidade
@@ -76644,6 +76650,7 @@ conferviforme
 confessar
 confessativo
 confessatório
+confessava
 confessável
 confessional
 confessionalístico
@@ -87630,6 +87637,7 @@ Dataprev
 datar
 datarada
 datário
+datas
 datas-base
 datas-marco
 Datas-MG
@@ -90193,6 +90201,7 @@ descurâinia
 descurioso
 descuscutar
 desdável
+desde
 desdém
 Desdêmona
 desdemonizável
@@ -91319,6 +91328,7 @@ despeda
 despedaçar
 despedaçável
 despediente
+despedir
 despedível
 despedração
 despedregoado
@@ -93224,6 +93234,7 @@ diartrodial
 diartrose
 diartrósico
 diartrótico
+dias
 Dias-BA
 dias-coelhense
 dias-d'avilense
@@ -97441,6 +97452,7 @@ dizembula
 dizente
 dizenze
 dizer
+dizia
 dizigomático
 dizigostemo
 dizigótico
@@ -99421,6 +99433,7 @@ duraracnítico
 durasnal
 durasno
 durativo
+durava
 durável
 duraz
 durázio
@@ -116234,6 +116247,7 @@ essoutro
 éssuo
 est.
 Est.
+esta
 estabacar-se
 estabalhoado
 estabanação
@@ -116282,6 +116296,7 @@ estacional
 estacionar
 estacionário
 estacionável
+estações
 estações-base
 estacusiáceo
 estad.
@@ -117667,6 +117682,8 @@ estibogluconato
 estibônio
 estibordo
 estibosamina
+esticada
+esticadas
 esticadela
 esticanço
 esticão
@@ -118250,6 +118267,7 @@ estorveiro
 estorvilho
 estorvor
 estorvos
+estou
 estou-fraca
 estoupeirado
 estoupelado
@@ -121870,6 +121888,7 @@ explicitável
 explícito
 explicitude
 explicudo
+expliquei
 explodir
 explodível
 explor.
@@ -122897,6 +122916,7 @@ falécio
 falectônio
 falefórias
 Faleg
+falei
 falejar
 falejida
 falena-do-pinheiro
@@ -126473,6 +126493,7 @@ fexicaína
 fexinidazol
 fexofenadina
 Feynmann
+fez
 fezada
 fezationa
 fezes
@@ -131252,6 +131273,7 @@ fossar
 fossário
 fossas-moiras
 fossas-mouras
+fosse
 fósseis-guia
 fósseis-índice
 fossetado
@@ -157042,6 +157064,7 @@ imagético
 imagicida
 imagicídio
 imaginação
+imaginações
 imaginal
 imaginar
 imaginário
@@ -173235,6 +173258,7 @@ lembo
 lembofiláceo
 lembófilo
 lembósia
+lembra
 lembradiço
 lembrança
 lembrancinha
@@ -188221,6 +188245,7 @@ más-firmas
 más-formações
 más-jeiras
 más-línguas
+mas
 mas-mas
 masa
 masacá
@@ -202911,6 +202936,7 @@ moralização
 moralizar
 moralizável
 morança
+morando
 morane
 morangabense
 morangal
@@ -205098,9 +205124,11 @@ muirri
 muissanga
 muissequeta
 muitá
+muitas
 muitia
 muitiprocessado
 muito
+muitos
 muiuira
 muiuna
 muiuré
@@ -208373,6 +208401,7 @@ Naruto
 Narva
 narval
 narvalina
+nas
 Nasa
 NASA
 nasal
@@ -223263,6 +223292,7 @@ palavração
 palavragem
 palavrão
 palavrar
+palavras
 palavras-base
 palavras-chave
 Palavras-Chave
@@ -227721,6 +227751,7 @@ pareável
 pareca
 parécbase
 parécbole
+parece
 parece-mas-não-é
 parecença
 parecência
@@ -233848,6 +233879,7 @@ pepuzita
 peq.
 pequapá
 pequear
+pequena
 pequena-burguesia
 pequenada
 pequenalho
@@ -249217,6 +249249,7 @@ prilepite
 priliximabe
 prilocaína
 prim.
+prima
 prima-crucense
 prima-dona
 primacia
@@ -254172,6 +254205,7 @@ quartilheiro
 quartilhos
 quartimetatársico
 quartinheiro
+quarto
 quarto-e-sala
 quarto-finalista
 quarto-forte
@@ -258199,6 +258233,7 @@ radioquimograma
 radiorrastreio
 radiorrealizador
 realizada
+realmente
 radiorreceptor
 radiorreportagem
 radiorrepórter
@@ -262460,6 +262495,7 @@ restitutio
 restitutório
 restivar
 restivos
+resto
 restolhadoiro
 restolhadouro
 restolhal
@@ -269437,6 +269473,7 @@ Salvino
 Sálvio
 salviol
 salviona
+salvo
 salvo-conduto
 salvos
 salvos-condutos
@@ -272873,6 +272910,7 @@ seguros-saúde
 segusiavo
 segusiense
 segusino
+sei
 Seia
 seiada
 seibão
@@ -273830,6 +273868,7 @@ senhor-sampaio
 senhor-servo
 senhor-velho
 senhor-zorrilho
+senhora
 Senhora-BA
 senhora-das-águas
 senhora-dona-sancha
@@ -285443,6 +285482,7 @@ tardança
 tardância
 tardão
 tardar
+tarde
 tardego
 tardeiro
 tardenense
@@ -299807,6 +299847,7 @@ trota-conventos
 trotandante
 trotão
 trotar
+trote
 trotear
 troteável
 troteiro
@@ -307968,6 +308009,7 @@ vezar
 vezeireiro
 vezeiro
 vézera
+vezes
 vezinha
 vezinho
 VHS
@@ -308309,6 +308351,7 @@ vicuíba
 vicunha
 vid.
 Vid.
+vida
 vida-de-lopes
 vida-longa
 vida-novense

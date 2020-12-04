@@ -10,6 +10,8 @@ class Word {
  public:
   Word(const std::string& name);
 
+  bool operator<(Word& word) const;
+
   std::string get_name();
   std::string get_lowercased_name();
   size_t get_score();

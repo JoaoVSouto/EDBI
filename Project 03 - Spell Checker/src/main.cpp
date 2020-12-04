@@ -115,7 +115,7 @@ int main(int argc, char const* argv[]) {
             break;
           }
 
-          std::cout << "\t - " << i.get_name() << std::endl;
+          std::cout << "\t- " << i.get_name() << std::endl;
 
           ++counter;
         }
