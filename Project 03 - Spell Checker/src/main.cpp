@@ -1,10 +1,13 @@
+#include <algorithm>
 #include <fstream>
 #include <iostream>
-#include <list>
 #include <regex>
+#include <set>
 #include <sstream>
 #include <string>
+#include <unordered_map>
 #include <unordered_set>
+#include <vector>
 
 #include "Word.h"
 #include "levenshtein.h"
@@ -32,15 +35,13 @@ int main(int argc, char const* argv[]) {
   }
 
   std::string dictionary_line;
-  std::list<Word> dictionary;
-  std::unordered_set<std::string> dictionary_set;
+  std::unordered_map<std::string, Word> dictionary_map;
 
   while (std::getline(dictionary_file, dictionary_line)) {
     if (dictionary_line.length() == 0) continue;
 
     Word word(dictionary_line);
-    dictionary.push_back(word);                         // O(1)
-    dictionary_set.insert(word.get_lowercased_name());  // Avg.: O(1)
+    dictionary_map.insert({word.get_lowercased_name(), word});  // Avg.: O(1)
   }
 
   std::ifstream target_file(target_file_path);
@@ -89,9 +90,9 @@ int main(int argc, char const* argv[]) {
 
         // Avg.: O(1)
         // Worst: O(N)
-        auto dic_it = dictionary_set.find(current_lowercased_word);
+        auto dic_it = dictionary_map.find(current_lowercased_word);
 
-        bool does_word_exist_on_dictionary = dic_it != dictionary_set.end();
+        bool does_word_exist_on_dictionary = dic_it != dictionary_map.end();
 
         if (does_word_exist_on_dictionary) {
           continue;
@@ -111,17 +112,18 @@ int main(int argc, char const* argv[]) {
         // Worst: O(N)
         checked_words.insert(current_lowercased_word);
 
-        std::list<Word> word_suggestions;
+        std::vector<Word> word_suggestions;
 
         // O(N)
-        for (auto& i : dictionary) {
+        for (auto& i : dictionary_map) {
           size_t score = levenshtein<std::string>(current_lowercased_word,
-                                                  i.get_lowercased_name());
-          i.set_score(score);
+                                                  i.first);
+          i.second.set_score(score);
 
           if (score < SUGGESTIONS_THRESHOLD) {
             if (word_suggestions.size() < SUGGESTIONS_LIMIT) {
-              word_suggestions.push_back(i);
+              // O(1)
+              word_suggestions.push_back(i.second);
               continue;
             }
 
@@ -136,9 +138,9 @@ int main(int argc, char const* argv[]) {
 
             if (found_word_with_bigger_score) {
               // O(1)
-              word_suggestions.push_back(i);
+              word_suggestions.push_back(i.second);
               // O(n)
-              word_suggestions.remove(*iter);
+              word_suggestions.erase(iter);
             }
 
             // O(n)
@@ -157,12 +159,12 @@ int main(int argc, char const* argv[]) {
         }
 
         // O(N * log N)
-        word_suggestions.sort();
+        std::sort(word_suggestions.begin(), word_suggestions.end());
 
         std::cout << current_word << ":" << std::endl;
 
         for (auto& i : word_suggestions) {
-          std::cout << "\t- " << i.get_name() << " - " << i.get_score() << std::endl;
+          std::cout << "\t- " << i.get_name() << std::endl;
         }
 
         std::cout << std::endl;

@@ -10,7 +10,7 @@ class Word {
  public:
   Word(const std::string& name);
 
-  bool operator<(Word& word) const;
+  bool operator<(const Word& word) const;
   bool operator==(const Word& word) const;
 
   std::string get_name();

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 project(SpellChecker VERSION 0.1 LANGUAGES CXX )
 
 # set the compiling flags
-set ( CMAKE_CXX_FLAGS "-Wall" )
+set ( CMAKE_CXX_FLAGS "-Wall -O3" )
 
 # program entries
 SET ( SRCS
