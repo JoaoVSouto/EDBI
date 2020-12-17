@@ -3,5 +3,7 @@
 !*.*
 *.out
 *.o
+*.pdf
+*.zip
 .vscode
 build/

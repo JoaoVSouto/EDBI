@@ -1,4 +1,3 @@
-stack top
 stack push 10
 list insertAtBack 1
 list insertAtBack 3
@@ -7,8 +6,6 @@ list print
 stack top
 stack pop
 stack size
-queue front
-queue back
 queue pushBack 10
 queue pushBack 20
 queue popFront
